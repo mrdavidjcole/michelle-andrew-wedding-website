@@ -18,7 +18,7 @@ export default () => {
 
         h1 {
           font-family: Tangerine, cursive;
-          font-size: 2.5em;
+          font-size: 3em;
           font-weight: 500;
         }
 
