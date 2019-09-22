@@ -92,7 +92,11 @@ export default () => {
           }
         }
       `}</style>
-      <img className="floral-header" src="/static/floral-header.png"/>
+      <Link href="/">
+        <a>
+          <img className="floral-header" src="/static/floral-header.png"/>
+        </a>
+      </Link>
       <button
         className="nav-toggler-button"
         onClick={() => setNavMenuIsOpen(!navMenuIsOpen)}
