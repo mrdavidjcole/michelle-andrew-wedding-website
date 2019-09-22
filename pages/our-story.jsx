@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Navigation from '../components/navigation.jsx';
+import FloralFooter from '../components/floral-footer.jsx';
 
 export default () => {
   return (
@@ -67,6 +68,7 @@ export default () => {
         hopes and dreams. Upon returning home, Andrew surprised Michelle by
         getting down on one knee and asking her to marry him. She said yes!
       </p>
+      <FloralFooter />
     </>
   );
 };
