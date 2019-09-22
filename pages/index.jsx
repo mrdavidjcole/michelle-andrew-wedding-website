@@ -20,11 +20,13 @@ export default () => {
           font-family: Tangerine, cursive;
           font-size: 3em;
           margin-bottom: .2em;
+          font-weight: 500;
         }
         h2 {
           font-family: Tangerine, cursive;
           font-size: 2.5em;
           margin-top: .2em;
+          font-weight: 500;
         }
       `}</style>
       <Navigation />

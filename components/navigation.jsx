@@ -4,6 +4,11 @@ export default () => {
   return (
     <>
       <style jsx>{`
+        .floral-header {
+          width: 25%;
+          margin: 1em auto;
+          display: block;
+        }
         nav {
           display: flex;
           align-items: center;
@@ -25,6 +30,7 @@ export default () => {
           border-bottom: 1px solid #303030;
         }
       `}</style>
+      <img className="floral-header" src="/static/floral-header.png"/>
       <nav>
         <Link href="/our-story">
           <a>Our Story</a>
