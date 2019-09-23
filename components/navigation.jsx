@@ -10,11 +10,16 @@ export default () => {
         * {
           box-sizing: border-box;
         }
-        
+
         .floral-header {
           width: 25%;
           margin: 1em auto;
           display: block;
+          transition: filter 300ms;
+        }
+
+        .floral-header:hover {
+          filter: saturate(3);
         }
 
         nav {
