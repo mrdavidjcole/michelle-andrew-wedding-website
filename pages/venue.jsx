@@ -101,7 +101,7 @@ export default () => {
           3567 Main Street<br/>
           Manchester Center, Vermont<br/><br/>
           <a
-            href="https://goo.gl/maps/KSu9Rywu4VFup2QQA"
+            href="https://www.google.com/maps/dir/?api=1&destination=The%2BEquinox%2C%2Ba%2BLuxury%2BCollection%2BGolf%2BResort%2B%2526%2BSpa%2C%2BVermont"
             target="_blank"
             rel="noreferrer noopener"
           >
