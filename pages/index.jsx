@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import Navigation from '../components/navigation.jsx';
+import FloralFooter from '../components/floral-footer.jsx';
 
 export default () => {
   const [imgLoaded, setImgLoaded] = useState(false);
@@ -62,6 +63,7 @@ export default () => {
         ref={elem => mainImage = elem}
         src="/static/michelle-and-andrew-main.jpg"
       />
+      <FloralFooter />
     </>
   );
 };
