@@ -7,6 +7,10 @@ export default () => {
   return (
     <>
       <style jsx>{`
+        * {
+          box-sizing: border-box;
+        }
+        
         .floral-header {
           width: 25%;
           margin: 1em auto;

@@ -11,6 +11,10 @@ export default () => {
       </Head>
       <Navigation />
       <style jsx>{`
+        * {
+          box-sizing: border-box;
+        }
+        
         .headings {
           text-align: center;
         }

@@ -10,6 +10,10 @@ export default () => {
         <link href="https://fonts.googleapis.com/css?family=Lora|Tangerine&display=swap" rel="stylesheet" />
       </Head>
       <style jsx>{`
+        * {
+          box-sizing: border-box;
+        }
+        
         .main-photo {
           width: 100%;
         }
