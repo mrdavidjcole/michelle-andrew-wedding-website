@@ -1,7 +1,22 @@
 import Head from 'next/head';
+import { useState, useEffect } from 'react';
 import Navigation from '../components/navigation.jsx';
 
 export default () => {
+  const [imgLoaded, setImgLoaded] = useState(false);
+  const onLoadImg = () => {
+    setImgLoaded(true);
+  }
+
+  let mainImage;
+
+  useEffect(() => {
+    console.log('use effect for index')
+    if (mainImage.complete) {
+      setImgLoaded(true);
+    }
+  });
+
   return (
     <>
       <Head>
@@ -13,8 +28,11 @@ export default () => {
         * {
           box-sizing: border-box;
         }
-        
+
         .main-photo {
+          opacity: ${imgLoaded ? 1 : 0};
+          transform: translateY(${imgLoaded ? '0px' : '20px'});
+          transition: opacity 2000ms, transform 2000ms;
           width: 100%;
         }
         .headings {
@@ -38,7 +56,12 @@ export default () => {
         <h1>Michelle and Andrew</h1>
         <h2>June 6th, 2020</h2>
       </div>
-      <img className="main-photo" src="/static/michelle-and-andrew-main.jpg"/>
+      <img
+        className="main-photo"
+        onLoad={onLoadImg}
+        ref={elem => mainImage = elem}
+        src="/static/michelle-and-andrew-main.jpg"
+      />
     </>
   );
 };
