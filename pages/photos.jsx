@@ -2,12 +2,20 @@ import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import Navigation from '../components/navigation.jsx';
 import FloralFooter from '../components/floral-footer.jsx';
+import FullWidthIcon from '../components/full-width-icon.jsx';
+import GridIcon from '../components/grid-icon.jsx';
 
 export default () => {
   const [shouldShowPhotos, setShouldShowPhotos] = useState(false);
+  const [layoutIsGrid, setLayoutIsGrid] = useState(true);
+
   useEffect(() => {
     setShouldShowPhotos(true);
   });
+
+  const onClickLayoutToggle = () => {
+    setLayoutIsGrid(!layoutIsGrid);
+  };
 
   return (
     <>
@@ -22,14 +30,32 @@ export default () => {
           box-sizing: border-box;
         }
 
-        .headings {
-          text-align: center;
+        .heading {
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
         h1 {
           font-family: Tangerine, cursive;
           font-size: 3em;
           font-weight: 500;
+          flex: 0 0 auto;
+          margin-right: 1em;
+        }
+
+        .layout-button {
+          cursor: pointer;
+          background: transparent;
+          border: none;
+          outline: none;
+          width: 40px;
+          flex: 0 0 auto;
+          transition: transform 300ms;
+        }
+
+        .layout-button:hover {
+          transform: scale(1.1);
         }
 
         .photos {
@@ -38,9 +64,10 @@ export default () => {
         }
 
         .photo-wrapper {
-          flex: 0 0 33.33%;
-          padding-top: 33.33%;
+          flex: 0 0 ${layoutIsGrid ? '33.33%' : '100%'};
+          padding-top: ${layoutIsGrid ? '33.33%' : '100%'};
           position: relative;
+          transition: flex-basis 700ms, padding-top 700ms;
         }
 
         .photo {
@@ -64,10 +91,19 @@ export default () => {
         }
 
       `}</style>
-      <div className="headings">
+      <div className="heading">
         <h1>
           Photos
         </h1>
+        <button
+          className="layout-button"
+          onClick={onClickLayoutToggle}
+          >
+            {layoutIsGrid
+              ? <FullWidthIcon />
+              : <GridIcon />
+            }
+          </button>
       </div>
       <div className="photos">
         <div className="photo-wrapper">
