@@ -1,7 +1,21 @@
 import Head from 'next/head';
+import { useState, useEffect } from 'react';
 import Navigation from '../components/navigation.jsx';
 
 export default () => {
+  const [imgLoaded, setImgLoaded] = useState(false);
+  const onLoadImg = () => {
+    setImgLoaded(true);
+  }
+
+  let equinoxPhotoImg;
+
+  useEffect(() => {
+    if (equinoxPhotoImg.complete) {
+      setImgLoaded(true);
+    }
+  });
+
   return (
     <>
       <Head>
@@ -14,7 +28,7 @@ export default () => {
         * {
           box-sizing: border-box;
         }
-        
+
         .headings {
           text-align: center;
         }
@@ -49,6 +63,8 @@ export default () => {
           filter: saturate(0.7);
           box-shadow: 0px 4px 12px 0px rgba(0,0,0,.6);
           max-width: 90%;
+          opacity: ${imgLoaded ? 1 : 0};
+          transition: opacity 1000ms;
         }
 
         .address {
@@ -74,7 +90,13 @@ export default () => {
         <h2>The Equinox Resort</h2>
       </div>
       <div className="venue-photo-and-details">
-        <img className="equinox-photo" src="/static/equinox-lincoln-lawn.jpg" alt="The Equinox Resort"/>
+        <img
+          className="equinox-photo"
+          src="/static/equinox-lincoln-lawn.jpg"
+          alt="The Equinox Resort"
+          onLoad={onLoadImg}
+          ref={elem => equinoxPhotoImg = elem}
+        />
         <address className="address">
           3567 Main Street<br/>
           Manchester Center, Vermont<br/><br/>
