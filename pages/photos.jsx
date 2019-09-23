@@ -1,8 +1,14 @@
 import Head from 'next/head';
+import { useState, useEffect } from 'react';
 import Navigation from '../components/navigation.jsx';
 import FloralFooter from '../components/floral-footer.jsx';
 
 export default () => {
+  const [shouldShowPhotos, setShouldShowPhotos] = useState(false);
+  useEffect(() => {
+    setShouldShowPhotos(true);
+  });
+
   return (
     <>
       <Head>
@@ -39,7 +45,6 @@ export default () => {
 
         .photo {
           position: absolute;
-
           top: 50%;
           left: 50%;
           padding: .5em;
@@ -49,7 +54,9 @@ export default () => {
           filter: saturate(.5);
           background-size: cover;
           background-position: center;
-          transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(${shouldShowPhotos ? '-50%' : 'calc(-50% + 20px)'});
+          opacity: ${shouldShowPhotos ? 1 : 0};
+          transition: opacity 2000ms, transform 2000ms;
         }
 
         .photo:hover {
