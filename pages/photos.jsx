@@ -2,19 +2,16 @@ import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import Navigation from '../components/navigation.jsx';
 import FloralFooter from '../components/floral-footer.jsx';
-import FullWidthIcon from '../components/full-width-icon.jsx';
-import GridIcon from '../components/grid-icon.jsx';
 
 export default () => {
   const [shouldShowPhotos, setShouldShowPhotos] = useState(false);
-  const [layoutIsGrid, setLayoutIsGrid] = useState(true);
 
   useEffect(() => {
     setShouldShowPhotos(true);
   });
 
-  const onClickLayoutToggle = () => {
-    setLayoutIsGrid(!layoutIsGrid);
+  const onClickPhoto = (event) => {
+    console.log(event);
   };
 
   return (
@@ -41,97 +38,199 @@ export default () => {
           font-size: 3em;
           font-weight: 500;
           flex: 0 0 auto;
-          margin-right: 1em;
-        }
-
-        .layout-button {
-          cursor: pointer;
-          background: transparent;
-          border: none;
-          outline: none;
-          width: 40px;
-          flex: 0 0 auto;
-          transition: transform 300ms;
-        }
-
-        .layout-button:hover {
-          transform: scale(1.1);
         }
 
         .photos {
           display: flex;
           flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: center;
         }
 
-        .photo-wrapper {
-          flex: 0 0 ${layoutIsGrid ? '33.33%' : '100%'};
-          padding-top: ${layoutIsGrid ? '33.33%' : '100%'};
+        .one-third {
+          flex: 0 0 33.33%;
+          width: 33.33%;
+        }
+
+        .square-outer {
           position: relative;
-          transition: flex-basis 700ms, padding-top 700ms;
+          padding-top: 100%;
         }
 
-        .photo {
+        .square-inner {
           position: absolute;
           top: 50%;
           left: 50%;
-          padding: .5em;
-          height: 95%;
           width: 95%;
-          transition: filter 400ms;
-          filter: saturate(.5);
-          background-size: cover;
-          background-position: center;
-          transform: translateX(-50%) translateY(${shouldShowPhotos ? '-50%' : 'calc(-50% + 20px)'});
+          height: 95%;
+          transform: translateX(-50%) translateY(-50%);
+        }
+
+        .photo-button {
+          cursor: pointer;
+          overflow: hidden;
+          position: relative;
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          padding: 0;
+          -webkit-appearance: none;
+          background: transparent;
+          border: none;
+          display: inline-block;
+        }
+
+        .photo-img {
           opacity: ${shouldShowPhotos ? 1 : 0};
-          transition: opacity 2000ms, transform 2000ms;
+          height: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
         }
-
-        .photo:hover {
-          filter: saturate(1);
-        }
-
       `}</style>
+
       <div className="heading">
         <h1>
           Photos
         </h1>
-        <button
-          className="layout-button"
-          onClick={onClickLayoutToggle}
-          >
-            {layoutIsGrid
-              ? <FullWidthIcon />
-              : <GridIcon />
-            }
-          </button>
       </div>
+
       <div className="photos">
-        <div className="photo-wrapper">
-          <div className="photo" style={{ backgroundImage: 'url("/static/michelle-and-andrew-at-colby.jpg")' }}></div>
+        <div className="one-third">
+          <div className="square-outer">
+            <div className="square-inner">
+              <button
+                className="photo-button"
+                onClick={onClickPhoto}
+                >
+                  <img
+                    className="photo-img"
+                    src="/static/michelle-and-andrew-at-colby.jpg"
+                  />
+                </button>
+            </div>
+          </div>
         </div>
-        <div className="photo-wrapper">
-          <div className="photo" style={{ backgroundImage: 'url("/static/michelle-and-andrew-at-home.jpg")' }}></div>
+        <div className="one-third">
+          <div className="square-outer">
+            <div className="square-inner">
+              <button
+                className="photo-button"
+                onClick={onClickPhoto}
+                >
+                  <img
+                    className="photo-img"
+                    src="/static/michelle-and-andrew-at-home.jpg"
+                  />
+                </button>
+            </div>
+          </div>
         </div>
-        <div className="photo-wrapper">
-          <div className="photo" style={{ backgroundImage: 'url("/static/michelle-and-andrew-at-lake.jpg")' }}></div>
+        <div className="one-third">
+          <div className="square-outer">
+            <div className="square-inner">
+              <button
+                className="photo-button"
+                onClick={onClickPhoto}
+                >
+                  <img
+                    className="photo-img"
+                    src="/static/michelle-and-andrew-at-lake.jpg"
+                  />
+                </button>
+            </div>
+          </div>
         </div>
-        <div className="photo-wrapper">
-          <div className="photo" style={{ backgroundImage: 'url("/static/michelle-and-andrew-fancy.jpg")' }}></div>
+        <div className="one-third">
+          <div className="square-outer">
+            <div className="square-inner">
+              <button
+                className="photo-button"
+                onClick={onClickPhoto}
+                >
+                  <img
+                    className="photo-img"
+                    src="/static/michelle-and-andrew-fancy.jpg"
+                  />
+                </button>
+            </div>
+          </div>
         </div>
-        <div className="photo-wrapper">
-          <div className="photo" style={{ backgroundImage: 'url("/static/michelle-and-andrew-hiking.jpg")' }}></div>
+        <div className="one-third">
+          <div className="square-outer">
+            <div className="square-inner">
+              <button
+                className="photo-button"
+                onClick={onClickPhoto}
+                >
+                  <img
+                    className="photo-img"
+                    src="/static/michelle-and-andrew-hiking.jpg"
+                  />
+                </button>
+            </div>
+          </div>
         </div>
-        <div className="photo-wrapper">
-          <div className="photo" style={{ backgroundImage: 'url("/static/michelle-and-andrew-on-boat.jpg")' }}></div>
+        <div className="one-third">
+          <div className="square-outer">
+            <div className="square-inner">
+              <button
+                className="photo-button"
+                onClick={onClickPhoto}
+                >
+                  <img
+                    className="photo-img"
+                    src="/static/michelle-and-andrew-on-boat.jpg"
+                  />
+                </button>
+            </div>
+          </div>
         </div>
-        <div className="photo-wrapper">
-          <div className="photo" style={{ backgroundImage: 'url("/static/michelle-and-andrew-on-mountain.jpg")' }}></div>
+        <div className="one-third">
+          <div className="square-outer">
+            <div className="square-inner">
+              <button
+                className="photo-button"
+                onClick={onClickPhoto}
+                >
+                  <img
+                    className="photo-img"
+                    src="/static/michelle-and-andrew-on-mountain.jpg"
+                  />
+                </button>
+            </div>
+          </div>
         </div>
-        <div className="photo-wrapper">
-          <div className="photo" style={{ backgroundImage: 'url("/static/michelle-and-andrew-proposal.jpg")' }}></div>
+        <div className="one-third">
+          <div className="square-outer">
+            <div className="square-inner">
+              <button
+                className="photo-button"
+                onClick={onClickPhoto}
+                >
+                  <img
+                    className="photo-img"
+                    src="/static/michelle-and-andrew-proposal.jpg"
+                  />
+                </button>
+            </div>
+          </div>
         </div>
-        <div className="photo-wrapper">
-          <div className="photo" style={{ backgroundImage: 'url("/static/michelle-and-andrew-skiing.jpg")' }}></div>
+        <div className="one-third">
+          <div className="square-outer">
+            <div className="square-inner">
+              <button
+                className="photo-button"
+                onClick={onClickPhoto}
+                >
+                  <img
+                    className="photo-img"
+                    src="/static/michelle-and-andrew-skiing.jpg"
+                  />
+                </button>
+            </div>
+          </div>
         </div>
       </div>
       <FloralFooter />
