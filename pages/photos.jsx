@@ -1,17 +1,20 @@
-import Head from 'next/head';
-import { useState, useEffect } from 'react';
-import Navigation from '../components/navigation.jsx';
-import FloralFooter from '../components/floral-footer.jsx';
+import Head from "next/head";
+import { useState, useEffect } from "react";
+import Navigation from "../components/navigation.jsx";
+import FloralFooter from "../components/floral-footer.jsx";
+import PopoverPhoto from "../components/popover-photo.jsx";
+import GlobalStyles from "../components/global-styles.jsx";
 
 export default () => {
   const [shouldShowPhotos, setShouldShowPhotos] = useState(false);
+  const [popoverIsOpen, setPopoverIsOpen] = useState(false);
 
   useEffect(() => {
     setShouldShowPhotos(true);
   });
 
-  const onClickPhoto = (event) => {
-    console.log(event);
+  const onClickPhoto = event => {
+    setPopoverIsOpen(true);
   };
 
   return (
@@ -19,9 +22,14 @@ export default () => {
       <Head>
         <title>Michelle & Andrew | Photos</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link href="https://fonts.googleapis.com/css?family=Lora|Tangerine&display=swap" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css?family=Lora|Tangerine&display=swap"
+          rel="stylesheet"
+        />
       </Head>
+      <GlobalStyles />
       <Navigation />
+      <PopoverPhoto isOpen={popoverIsOpen} setIsOpen={setPopoverIsOpen} />
       <style jsx>{`
         * {
           box-sizing: border-box;
@@ -78,6 +86,12 @@ export default () => {
           background: transparent;
           border: none;
           display: inline-block;
+          transition: box-shadow 300ms;
+          box-shadow: 0 3px 10px rgba(61, 70, 66, 0);
+        }
+
+        .photo-button:hover {
+          box-shadow: 0 3px 10px rgba(61, 70, 66, 0.6);
         }
 
         .photo-img {
@@ -91,144 +105,115 @@ export default () => {
       `}</style>
 
       <div className="heading">
-        <h1>
-          Photos
-        </h1>
+        <h1>Photos</h1>
       </div>
 
       <div className="photos">
         <div className="one-third">
           <div className="square-outer">
             <div className="square-inner">
-              <button
-                className="photo-button"
-                onClick={onClickPhoto}
-                >
-                  <img
-                    className="photo-img"
-                    src="/static/michelle-and-andrew-at-colby.jpg"
-                  />
-                </button>
+              <button className="photo-button" onClick={onClickPhoto}>
+                <img
+                  className="photo-img"
+                  src="/static/michelle-and-andrew-at-colby.jpg"
+                />
+              </button>
             </div>
           </div>
         </div>
         <div className="one-third">
           <div className="square-outer">
             <div className="square-inner">
-              <button
-                className="photo-button"
-                onClick={onClickPhoto}
-                >
-                  <img
-                    className="photo-img"
-                    src="/static/michelle-and-andrew-at-home.jpg"
-                  />
-                </button>
+              <button className="photo-button" onClick={onClickPhoto}>
+                <img
+                  className="photo-img"
+                  src="/static/michelle-and-andrew-at-home.jpg"
+                />
+              </button>
             </div>
           </div>
         </div>
         <div className="one-third">
           <div className="square-outer">
             <div className="square-inner">
-              <button
-                className="photo-button"
-                onClick={onClickPhoto}
-                >
-                  <img
-                    className="photo-img"
-                    src="/static/michelle-and-andrew-at-lake.jpg"
-                  />
-                </button>
+              <button className="photo-button" onClick={onClickPhoto}>
+                <img
+                  className="photo-img"
+                  src="/static/michelle-and-andrew-at-lake.jpg"
+                />
+              </button>
             </div>
           </div>
         </div>
         <div className="one-third">
           <div className="square-outer">
             <div className="square-inner">
-              <button
-                className="photo-button"
-                onClick={onClickPhoto}
-                >
-                  <img
-                    className="photo-img"
-                    src="/static/michelle-and-andrew-fancy.jpg"
-                  />
-                </button>
+              <button className="photo-button" onClick={onClickPhoto}>
+                <img
+                  className="photo-img"
+                  src="/static/michelle-and-andrew-fancy.jpg"
+                />
+              </button>
             </div>
           </div>
         </div>
         <div className="one-third">
           <div className="square-outer">
             <div className="square-inner">
-              <button
-                className="photo-button"
-                onClick={onClickPhoto}
-                >
-                  <img
-                    className="photo-img"
-                    src="/static/michelle-and-andrew-hiking.jpg"
-                  />
-                </button>
+              <button className="photo-button" onClick={onClickPhoto}>
+                <img
+                  className="photo-img"
+                  src="/static/michelle-and-andrew-hiking.jpg"
+                />
+              </button>
             </div>
           </div>
         </div>
         <div className="one-third">
           <div className="square-outer">
             <div className="square-inner">
-              <button
-                className="photo-button"
-                onClick={onClickPhoto}
-                >
-                  <img
-                    className="photo-img"
-                    src="/static/michelle-and-andrew-on-boat.jpg"
-                  />
-                </button>
+              <button className="photo-button" onClick={onClickPhoto}>
+                <img
+                  className="photo-img"
+                  src="/static/michelle-and-andrew-on-boat.jpg"
+                />
+              </button>
             </div>
           </div>
         </div>
         <div className="one-third">
           <div className="square-outer">
             <div className="square-inner">
-              <button
-                className="photo-button"
-                onClick={onClickPhoto}
-                >
-                  <img
-                    className="photo-img"
-                    src="/static/michelle-and-andrew-on-mountain.jpg"
-                  />
-                </button>
+              <button className="photo-button" onClick={onClickPhoto}>
+                <img
+                  className="photo-img"
+                  src="/static/michelle-and-andrew-on-mountain.jpg"
+                />
+              </button>
             </div>
           </div>
         </div>
         <div className="one-third">
           <div className="square-outer">
             <div className="square-inner">
-              <button
-                className="photo-button"
-                onClick={onClickPhoto}
-                >
-                  <img
-                    className="photo-img"
-                    src="/static/michelle-and-andrew-proposal.jpg"
-                  />
-                </button>
+              <button className="photo-button" onClick={onClickPhoto}>
+                <img
+                  className="photo-img"
+                  src="/static/michelle-and-andrew-proposal.jpg"
+                />
+              </button>
             </div>
           </div>
         </div>
         <div className="one-third">
           <div className="square-outer">
             <div className="square-inner">
-              <button
-                className="photo-button"
-                onClick={onClickPhoto}
-                >
-                  <img
-                    className="photo-img"
-                    src="/static/michelle-and-andrew-skiing.jpg"
-                  />
-                </button>
+              <button className="photo-button" onClick={onClickPhoto}>
+                <img
+                  className="photo-img"
+                  src="/static/michelle-and-andrew-skiing.jpg"
+                />
+              </button>
             </div>
           </div>
         </div>

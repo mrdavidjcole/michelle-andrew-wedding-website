@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { useState, useEffect } from 'react';
+import GlobalStyles from "../components/global-styles.jsx";
 import Navigation from '../components/navigation.jsx';
 import FloralFooter from '../components/floral-footer.jsx';
 
@@ -12,7 +13,6 @@ export default () => {
   let mainImage;
 
   useEffect(() => {
-    console.log('use effect for index')
     if (mainImage.complete) {
       setImgLoaded(true);
     }
@@ -25,6 +25,7 @@ export default () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link href="https://fonts.googleapis.com/css?family=Lora|Tangerine&display=swap" rel="stylesheet" />
       </Head>
+      <GlobalStyles />
       <style jsx>{`
         * {
           box-sizing: border-box;

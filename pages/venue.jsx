@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { useState, useEffect } from 'react';
+import GlobalStyles from "../components/global-styles.jsx";
 import Navigation from '../components/navigation.jsx';
 
 export default () => {
@@ -23,6 +24,7 @@ export default () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link href="https://fonts.googleapis.com/css?family=Lora|Tangerine&display=swap" rel="stylesheet" />
       </Head>
+      <GlobalStyles />
       <Navigation />
       <style jsx>{`
         * {
