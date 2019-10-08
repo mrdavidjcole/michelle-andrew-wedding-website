@@ -37,32 +37,31 @@ export default (props) => {
     }
   }
 
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.height = '100%';
-      document.body.style.width = '100%';
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.height = '';
-      document.body.style.width = '';
-      document.body.style.overflow = '';
-    }
-  });
-
   return (
     <>
       <style jsx>{`
         .overlay-background {
+          align-items: flex-start;
           background: rgba(0,0,0,.6);
+          cursor: pointer;
           display: ${isDisplayNone ? 'none' : ''};
           height: 100vh;
           left: 0;
           opacity: ${isOpaque ? 1 : 0};
-          position: absolute;
+          position: fixed;
           top: 0;
           transition: opacity 500ms;
           width: 100vw;
           z-index: 10000;
+        }
+
+        .photo {
+          max-height: 90%;
+          max-width: 90%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
         }
       `}</style>
       <div
@@ -70,6 +69,7 @@ export default (props) => {
         onClick={() => setIsOpen(false)}
         onTransitionEnd={onTransitionEnd}
       >
+        <img className="photo" src={imgSrc}/>
       </div>
     </>
   );

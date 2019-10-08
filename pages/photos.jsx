@@ -8,6 +8,7 @@ import GlobalStyles from "../components/global-styles.jsx";
 export default () => {
   const [shouldShowPhotos, setShouldShowPhotos] = useState(false);
   const [popoverIsOpen, setPopoverIsOpen] = useState(false);
+  const [imgSrc, setImgSrc] = useState(null);
 
   useEffect(() => {
     setShouldShowPhotos(true);
@@ -15,6 +16,7 @@ export default () => {
 
   const onClickPhoto = event => {
     setPopoverIsOpen(true);
+    setImgSrc(event.currentTarget.dataset.imgsrc);
   };
 
   return (
@@ -29,7 +31,11 @@ export default () => {
       </Head>
       <GlobalStyles />
       <Navigation />
-      <PopoverPhoto isOpen={popoverIsOpen} setIsOpen={setPopoverIsOpen} />
+      <PopoverPhoto
+        isOpen={popoverIsOpen}
+        setIsOpen={setPopoverIsOpen}
+        imgSrc={imgSrc}
+      />
       <style jsx>{`
         * {
           box-sizing: border-box;
@@ -112,7 +118,11 @@ export default () => {
         <div className="one-third">
           <div className="square-outer">
             <div className="square-inner">
-              <button className="photo-button" onClick={onClickPhoto}>
+              <button
+                className="photo-button"
+                onClick={onClickPhoto}
+                data-imgsrc="/static/michelle-and-andrew-at-colby.jpg"
+              >
                 <img
                   className="photo-img"
                   src="/static/michelle-and-andrew-at-colby.jpg"
@@ -124,7 +134,11 @@ export default () => {
         <div className="one-third">
           <div className="square-outer">
             <div className="square-inner">
-              <button className="photo-button" onClick={onClickPhoto}>
+              <button
+                className="photo-button"
+                onClick={onClickPhoto}
+                data-imgsrc="/static/michelle-and-andrew-at-home.jpg"
+              >
                 <img
                   className="photo-img"
                   src="/static/michelle-and-andrew-at-home.jpg"
@@ -136,7 +150,11 @@ export default () => {
         <div className="one-third">
           <div className="square-outer">
             <div className="square-inner">
-              <button className="photo-button" onClick={onClickPhoto}>
+              <button
+                className="photo-button"
+                onClick={onClickPhoto}
+                data-imgsrc="/static/michelle-and-andrew-at-lake.jpg"
+              >
                 <img
                   className="photo-img"
                   src="/static/michelle-and-andrew-at-lake.jpg"
@@ -148,7 +166,11 @@ export default () => {
         <div className="one-third">
           <div className="square-outer">
             <div className="square-inner">
-              <button className="photo-button" onClick={onClickPhoto}>
+              <button
+                className="photo-button"
+                onClick={onClickPhoto}
+                data-imgsrc="/static/michelle-and-andrew-fancy.jpg"
+              >
                 <img
                   className="photo-img"
                   src="/static/michelle-and-andrew-fancy.jpg"
@@ -160,7 +182,11 @@ export default () => {
         <div className="one-third">
           <div className="square-outer">
             <div className="square-inner">
-              <button className="photo-button" onClick={onClickPhoto}>
+              <button
+                className="photo-button"
+                onClick={onClickPhoto}
+                data-imgsrc="/static/michelle-and-andrew-hiking.jpg"
+              >
                 <img
                   className="photo-img"
                   src="/static/michelle-and-andrew-hiking.jpg"
@@ -172,7 +198,11 @@ export default () => {
         <div className="one-third">
           <div className="square-outer">
             <div className="square-inner">
-              <button className="photo-button" onClick={onClickPhoto}>
+              <button
+                className="photo-button"
+                onClick={onClickPhoto}
+                data-imgsrc="/static/michelle-and-andrew-on-boat.jpg"
+              >
                 <img
                   className="photo-img"
                   src="/static/michelle-and-andrew-on-boat.jpg"
@@ -184,7 +214,11 @@ export default () => {
         <div className="one-third">
           <div className="square-outer">
             <div className="square-inner">
-              <button className="photo-button" onClick={onClickPhoto}>
+              <button
+                className="photo-button"
+                onClick={onClickPhoto}
+                data-imgsrc="/static/michelle-and-andrew-on-mountain.jpg"
+              >
                 <img
                   className="photo-img"
                   src="/static/michelle-and-andrew-on-mountain.jpg"
@@ -196,7 +230,11 @@ export default () => {
         <div className="one-third">
           <div className="square-outer">
             <div className="square-inner">
-              <button className="photo-button" onClick={onClickPhoto}>
+              <button
+                className="photo-button"
+                onClick={onClickPhoto}
+                data-imgsrc="/static/michelle-and-andrew-proposal.jpg"
+              >
                 <img
                   className="photo-img"
                   src="/static/michelle-and-andrew-proposal.jpg"
@@ -208,7 +246,11 @@ export default () => {
         <div className="one-third">
           <div className="square-outer">
             <div className="square-inner">
-              <button className="photo-button" onClick={onClickPhoto}>
+              <button
+                className="photo-button"
+                onClick={onClickPhoto}
+                data-imgsrc="/static/michelle-and-andrew-skiing.jpg"
+              >
                 <img
                   className="photo-img"
                   src="/static/michelle-and-andrew-skiing.jpg"
