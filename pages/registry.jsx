@@ -34,8 +34,13 @@ export default () => {
         }
 
         .registries {
-          max-width: 600px;
+          max-width: 80%;
+          margin: 0 auto;
           text-align: center;
+        }
+
+        .registry-link {
+          max-width: 600px;
           margin: 0 auto;
         }
 
@@ -48,12 +53,12 @@ export default () => {
       </div>
       <div className="registries">
         <p>
-          <a href="https://michelle-andrew-wedding-website.mrdavidjcole.now.sh">
+          <a className="registry-link" href="https://michelle-andrew-wedding-website.mrdavidjcole.now.sh">
             <CrateAndBarrelSvg />
           </a>
         </p>
         <p>
-          <a href="https://www.williams-sonoma.com/m/registry/whz7qx2vdw/registry-list.html">
+          <a className="registry-link" href="https://www.williams-sonoma.com/m/registry/whz7qx2vdw/registry-list.html">
             <WilliamsSonomaSvg />
           </a>
         </p>
