@@ -32,6 +32,7 @@ export default () => {
           font-family: 'Lora', serif;
           line-height: 1.6em;
           margin-top: 2em;
+          font-size: 1.1em;
         }
 
         .text-and-photo {

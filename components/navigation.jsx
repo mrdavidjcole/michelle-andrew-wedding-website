@@ -33,8 +33,8 @@ export default () => {
 
         a {
           color: #303030;
+          font-family: 'Lora', serif;
           text-decoration: none;
-          text-transform: uppercase;
           flex: 0 0 auto;
           transition: border-color 200ms;
           border-bottom: 1px solid transparent;
