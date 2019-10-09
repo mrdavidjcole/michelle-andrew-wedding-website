@@ -52,7 +52,7 @@ export default () => {
         }
 
         .day {
-          padding: 2em;
+          padding: 2em 0;
         }
 
         .date {
