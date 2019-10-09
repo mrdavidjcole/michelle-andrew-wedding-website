@@ -121,11 +121,11 @@ export default () => {
               <button
                 className="photo-button"
                 onClick={onClickPhoto}
-                data-imgsrc="/static/michelle-and-andrew-at-colby.jpg"
+                data-imgsrc="/static/michelle-and-andrew-at-beach.jpg"
               >
                 <img
                   className="photo-img"
-                  src="/static/michelle-and-andrew-at-colby.jpg"
+                  src="/static/michelle-and-andrew-at-beach.jpg"
                 />
               </button>
             </div>
@@ -265,11 +265,11 @@ export default () => {
               <button
                 className="photo-button"
                 onClick={onClickPhoto}
-                data-imgsrc="/static/michelle-and-andrew-at-beach.jpg"
+                data-imgsrc="/static/michelle-and-andrew-at-colby.jpg"
               >
                 <img
                   className="photo-img"
-                  src="/static/michelle-and-andrew-at-beach.jpg"
+                  src="/static/michelle-and-andrew-at-colby.jpg"
                 />
               </button>
             </div>
