@@ -57,7 +57,7 @@ export default () => {
           text-align: center;
           margin: 0 auto;
           padding: 3em;
-          height: 300px;
+          min-height: 300px;
           border-bottom: 2px solid rgb(197, 214, 204);
         }
 
