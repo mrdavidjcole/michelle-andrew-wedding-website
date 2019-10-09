@@ -23,6 +23,10 @@ export default () => {
       <Head>
         <title>Michelle & Andrew | June 6th, 2020</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta property="og:title" content="Michelle & Andrew | June 6th, 2020" />
+        <meta property="og:description" content="Michelle and Andrew are getting married!" />
+        <meta property="og:url" content="https://michelleandandrew.com/" />
+        <meta property="og:image" content="https://michelleandandrew.com/static/michelle-and-andrew-main.jpg" />
         <link href="https://fonts.googleapis.com/css?family=Lora|Tangerine&display=swap" rel="stylesheet" />
       </Head>
       <GlobalStyles />
