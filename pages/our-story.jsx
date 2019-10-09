@@ -50,9 +50,8 @@ export default () => {
         }
 
         .photo-side {
-          flex: 1 1 50%;
-          padding: 2em;
-          min-width: 450px;
+          flex: 1 1 450px;
+          padding: 1.5em;
         }
 
         .photo {
