@@ -137,6 +137,22 @@ export default () => {
               <button
                 className="photo-button"
                 onClick={onClickPhoto}
+                data-imgsrc="/static/michelle-and-andrew-proposal.jpg"
+              >
+                <img
+                  className="photo-img"
+                  src="/static/michelle-and-andrew-proposal.jpg"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="one-third">
+          <div className="square-outer">
+            <div className="square-inner">
+              <button
+                className="photo-button"
+                onClick={onClickPhoto}
                 data-imgsrc="/static/michelle-and-andrew-at-home.jpg"
               >
                 <img
@@ -153,11 +169,11 @@ export default () => {
               <button
                 className="photo-button"
                 onClick={onClickPhoto}
-                data-imgsrc="/static/michelle-and-andrew-at-lake.jpg"
+                data-imgsrc="/static/michelle-and-andrew-above-lake.jpg"
               >
                 <img
                   className="photo-img"
-                  src="/static/michelle-and-andrew-at-lake.jpg"
+                  src="/static/michelle-and-andrew-above-lake.jpg"
                 />
               </button>
             </div>
@@ -233,11 +249,11 @@ export default () => {
               <button
                 className="photo-button"
                 onClick={onClickPhoto}
-                data-imgsrc="/static/michelle-and-andrew-proposal.jpg"
+                data-imgsrc="/static/michelle-and-andrew-skiing.jpg"
               >
                 <img
                   className="photo-img"
-                  src="/static/michelle-and-andrew-proposal.jpg"
+                  src="/static/michelle-and-andrew-skiing.jpg"
                 />
               </button>
             </div>
@@ -249,11 +265,43 @@ export default () => {
               <button
                 className="photo-button"
                 onClick={onClickPhoto}
-                data-imgsrc="/static/michelle-and-andrew-skiing.jpg"
+                data-imgsrc="/static/michelle-and-andrew-at-beach.jpg"
               >
                 <img
                   className="photo-img"
-                  src="/static/michelle-and-andrew-skiing.jpg"
+                  src="/static/michelle-and-andrew-at-beach.jpg"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="one-third">
+          <div className="square-outer">
+            <div className="square-inner">
+              <button
+                className="photo-button"
+                onClick={onClickPhoto}
+                data-imgsrc="/static/michelle-and-andrew-at-lighthouse.jpg"
+              >
+                <img
+                  className="photo-img"
+                  src="/static/michelle-and-andrew-at-lighthouse.jpg"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="one-third">
+          <div className="square-outer">
+            <div className="square-inner">
+              <button
+                className="photo-button"
+                onClick={onClickPhoto}
+                data-imgsrc="/static/michelle-and-andrew-during-fall.jpg"
+              >
+                <img
+                  className="photo-img"
+                  src="/static/michelle-and-andrew-during-fall.jpg"
                 />
               </button>
             </div>
