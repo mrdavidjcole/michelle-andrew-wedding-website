@@ -86,7 +86,7 @@ export default () => {
             flex-direction: column;
             margin: 0;
             padding: ${navMenuIsOpen ? '.5em 0' : '0'};
-            max-height: ${navMenuIsOpen ? '250px' : '0px'};
+            max-height: ${navMenuIsOpen ? '285px' : '0px'};
             overflow: hidden;
             transition: max-height 400ms, opacity 400ms;
             opacity: ${navMenuIsOpen ? 1 : 0};
