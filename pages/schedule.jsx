@@ -80,7 +80,7 @@ export default () => {
       <div className="days">
         <div className="day">
           <div className="date">
-            <h2>Friday, August 18</h2>
+            <h2>Friday, June 5th</h2>
           </div>
           <div className="details">
             <h3>
@@ -108,7 +108,7 @@ export default () => {
         </div>
         <div className="day">
           <div className="date">
-            <h2>Saturday, August 19</h2>
+            <h2>Saturday, June 6th</h2>
           </div>
           <div className="details">
             <h3>
@@ -136,7 +136,7 @@ export default () => {
         </div>
         <div className="day">
           <div className="date">
-            <h2>Sunday, August 20</h2>
+            <h2>Sunday, June 7th</h2>
           </div>
           <div className="details">
             <h3>
