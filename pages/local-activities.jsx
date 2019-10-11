@@ -6,7 +6,7 @@ export default () => {
   return (
     <>
       <Head>
-        <title>Michelle & Andrew | Local Attractions</title>
+        <title>Michelle & Andrew | Local Activities</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           href="https://fonts.googleapis.com/css?family=Lora|Tangerine&display=swap"
@@ -31,7 +31,7 @@ export default () => {
           font-weight: 500;
         }
 
-        .attractions {
+        .activities {
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
@@ -41,19 +41,20 @@ export default () => {
         }
 
         a {
-          text-decoration: none;
-          color: rgb(43, 133, 81);
-          flex: 1 1 25%;
-          height: 140px;
+          align-items: center;
           background-color: #ffffff;
           border-radius: 4px;
           box-shadow: 0 3px 10px rgba(61, 70, 66, 0.2);
-          transition: box-shadow 300ms;
+          color: rgb(43, 133, 81);
           display: flex;
-          align-items: center;
+          flex: 1 1 25%;
+          font-size: 1.3em;
+          height: 140px;
           justify-content: center;
           margin: 1em;
           min-width: 250px;
+          text-decoration: none;
+          transition: box-shadow 300ms;
         }
 
         a:hover {
@@ -63,10 +64,10 @@ export default () => {
       `}</style>
 
       <div className="headings">
-        <h1>Local Attractions</h1>
+        <h1>Local Activities</h1>
       </div>
 
-      <div className="attractions">
+      <div className="activities">
         <a target="_blank" rel="noopener" href="https://www.svac.org/">
           Art Museum
         </a>

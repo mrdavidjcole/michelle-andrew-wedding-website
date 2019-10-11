@@ -8,7 +8,7 @@ export default () => {
   return (
     <>
       <Head>
-        <title>Michelle & Andrew | Local Attractions</title>
+        <title>Michelle & Andrew | Registry</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           href="https://fonts.googleapis.com/css?family=Lora|Tangerine&display=swap"
@@ -39,29 +39,57 @@ export default () => {
           text-align: center;
         }
 
-        .registry-link {
-          max-width: 600px;
+        .registries-wrapper {
+          max-width: 1000px;
           margin: 0 auto;
         }
 
+        .registry-link {
+          display: block;
+          margin: 0 auto;
+          margin: 2em auto;
+          padding: 2em 0;
+          border: 2px solid rgb(197, 214, 204);
+        }
+
+        .logo {
+          margin: 0 auto;
+        }
+
+        .cb {
+          max-width: 45%;
+        }
+
+        .ws {
+          padding-top: 8px;
+          max-width: 90%;
+        }
+
         p {
-          margin: 5em auto;
         }
       `}</style>
       <div className="headings">
-        <h1>Registry</h1>
+        <h1>Registries</h1>
       </div>
-      <div className="registries">
-        <p>
-          <a className="registry-link" href="https://michelle-andrew-wedding-website.mrdavidjcole.now.sh">
-            <CrateAndBarrelSvg />
+      <div className="registries-wrapper">
+        <div className="registries">
+          <a
+            className="registry-link"
+            href="https://www.crateandbarrel.com/gift-registry/michelle-cole-and-andrew-bickford/r6016453"
+          >
+            <div className="logo cb">
+              <CrateAndBarrelSvg />
+            </div>
           </a>
-        </p>
-        <p>
-          <a className="registry-link" href="https://www.williams-sonoma.com/m/registry/whz7qx2vdw/registry-list.html">
-            <WilliamsSonomaSvg />
+          <a
+            className="registry-link"
+            href="https://www.williams-sonoma.com/m/registry/whz7qx2vdw/registry-list.html"
+          >
+            <div className="logo ws">
+              <WilliamsSonomaSvg />
+            </div>
           </a>
-        </p>
+        </div>
       </div>
     </>
   );

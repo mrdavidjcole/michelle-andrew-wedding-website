@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import GlobalStyles from "../components/global-styles.jsx";
 import Navigation from '../components/navigation.jsx';
+import FloralFooter from '../components/floral-footer.jsx';
 
 export default () => {
   const [imgLoaded, setImgLoaded] = useState(false);
@@ -72,7 +73,7 @@ export default () => {
         .address {
           flex: 0 0 50%;
           width: 90%;
-          margin: 4em auto;
+          margin: 2em auto;
           text-align: center;
           font-size: 1.5em;
           font-style: normal;
@@ -92,13 +93,15 @@ export default () => {
         <h2>The Equinox Resort</h2>
       </div>
       <div className="venue-photo-and-details">
-        <img
-          className="equinox-photo"
-          src="/static/equinox-lincoln-lawn.jpg"
-          alt="The Equinox Resort"
-          onLoad={onLoadImg}
-          ref={elem => equinoxPhotoImg = elem}
-        />
+        <a href="https://www.equinoxresort.com/" target="_blank">
+          <img
+            className="equinox-photo"
+            src="/static/equinox-lincoln-lawn.jpg"
+            alt="The Equinox Resort"
+            onLoad={onLoadImg}
+            ref={elem => equinoxPhotoImg = elem}
+          />
+        </a>
         <address className="address">
           3567 Main Street<br/>
           Manchester Center, Vermont<br/><br/>
@@ -111,6 +114,7 @@ export default () => {
           </a>
         </address>
       </div>
+      <FloralFooter />
     </>
   );
 };

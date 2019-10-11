@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import GlobalStyles from "../components/global-styles.jsx";
 import Navigation from '../components/navigation.jsx';
+import FloralFooter from '../components/floral-footer.jsx';
 
 export default () => {
   return (
@@ -52,16 +53,17 @@ export default () => {
         }
 
         .day {
-          padding: 2em 0;
+          padding-bottom: 3em;
         }
 
         .date {
+          color: rgb(43, 133, 81);
           flex: 0 0 260px;
           text-align: center;
         }
 
         .details {
-          border-left: 2px solid rgb(197, 214, 204);
+          border: 2px solid rgb(197, 214, 204);
           flex: 1 1 70%;
           padding: 0 2em;
           text-align: center;
@@ -79,10 +81,10 @@ export default () => {
       </div>
       <div className="days">
         <div className="day">
-          <div className="date">
-            <h2>Friday, June 5th</h2>
-          </div>
           <div className="details">
+            <div className="date">
+              <h2>Friday, June 5th</h2>
+            </div>
             <h3>
               Welcome Reception
             </h3>
@@ -107,10 +109,10 @@ export default () => {
           </div>
         </div>
         <div className="day">
-          <div className="date">
-            <h2>Saturday, June 6th</h2>
-          </div>
           <div className="details">
+            <div className="date">
+              <h2>Saturday, June 6th</h2>
+            </div>
             <h3>
               Wedding Ceremony and Reception
             </h3>
@@ -135,10 +137,10 @@ export default () => {
           </div>
         </div>
         <div className="day">
-          <div className="date">
-            <h2>Sunday, June 7th</h2>
-          </div>
           <div className="details">
+            <div className="date">
+              <h2>Sunday, June 7th</h2>
+            </div>
             <h3>
               Farewell Breakfast
             </h3>
@@ -163,6 +165,7 @@ export default () => {
           </div>
         </div>
       </div>
+      <FloralFooter />
     </>
   );
 };

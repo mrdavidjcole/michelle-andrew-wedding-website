@@ -130,8 +130,8 @@ export default () => {
         <Link href="/accomodations">
           <a>Accomodations</a>
         </Link>
-        <Link href="/local-attractions">
-          <a>Local Attractions</a>
+        <Link href="/local-activities">
+          <a>Local Activities</a>
         </Link>
         <Link href="/registry">
           <a>Registry</a>
