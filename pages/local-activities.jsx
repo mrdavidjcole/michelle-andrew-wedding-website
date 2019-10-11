@@ -1,6 +1,7 @@
 import Head from "next/head";
 import GlobalStyles from "../components/global-styles.jsx";
 import Navigation from "../components/navigation.jsx";
+import FloralFooter from '../components/floral-footer.jsx';
 
 export default () => {
   return (
@@ -158,6 +159,7 @@ export default () => {
           Waterfalls
         </a>
       </div>
+      <FloralFooter />
     </>
   );
 };
