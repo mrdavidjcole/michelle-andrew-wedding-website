@@ -185,6 +185,22 @@ export default () => {
               <button
                 className="photo-button"
                 onClick={onClickPhoto}
+                data-imgsrc="/static/michelle-and-andrew-biking.jpg"
+              >
+                <img
+                  className="photo-img"
+                  src="/static/michelle-and-andrew-biking.jpg"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="one-third">
+          <div className="square-outer">
+            <div className="square-inner">
+              <button
+                className="photo-button"
+                onClick={onClickPhoto}
                 data-imgsrc="/static/michelle-and-andrew-fancy.jpg"
               >
                 <img
@@ -254,22 +270,6 @@ export default () => {
                 <img
                   className="photo-img"
                   src="/static/michelle-and-andrew-skiing.jpg"
-                />
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="one-third">
-          <div className="square-outer">
-            <div className="square-inner">
-              <button
-                className="photo-button"
-                onClick={onClickPhoto}
-                data-imgsrc="/static/michelle-and-andrew-at-colby.jpg"
-              >
-                <img
-                  className="photo-img"
-                  src="/static/michelle-and-andrew-at-colby.jpg"
                 />
               </button>
             </div>

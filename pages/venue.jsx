@@ -81,13 +81,10 @@ export default () => {
 
         a {
           text-decoration: none;
-          color: #303030;
+          color: rgb(103, 156, 125);
           transition: color 300ms;
         }
 
-        a:hover {
-          color: rgb(103, 156, 125);
-        }
       `}</style>
       <div className="headings">
         <h2>The Equinox Resort</h2>

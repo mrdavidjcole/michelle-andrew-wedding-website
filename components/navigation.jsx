@@ -115,6 +115,9 @@ export default () => {
         <div className="nav-toggler-icon-line nav-toggler-icon-bottom-line"></div>
       </button>
       <nav>
+        <Link href="/">
+          <a>Our Wedding</a>
+        </Link>
         <Link href="/our-story">
           <a>Our Story</a>
         </Link>

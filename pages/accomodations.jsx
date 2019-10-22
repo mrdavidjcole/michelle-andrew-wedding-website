@@ -7,7 +7,7 @@ export default () => {
   return (
     <>
       <Head>
-        <title>Michelle & Andrew | Accomodations</title>
+        <title>Michelle & Andrew | Accommodations</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link href="https://fonts.googleapis.com/css?family=Lora|Tangerine&display=swap" rel="stylesheet" />
       </Head>
@@ -68,7 +68,7 @@ export default () => {
       `}</style>
 
       <div className="headings">
-        <h1>Accomodations</h1>
+        <h1>Accommodations</h1>
       </div>
       <p className="general-info">
         We have reserved room blocks at two hotels in Manchester. Both are
