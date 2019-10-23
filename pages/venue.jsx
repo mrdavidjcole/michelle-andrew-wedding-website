@@ -22,6 +22,7 @@ export default () => {
     <>
       <Head>
         <title>Michelle & Andrew | Venue</title>
+        <link href="/static/favicon.ico" rel="icon" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link href="https://fonts.googleapis.com/css?family=Lora|Tangerine&display=swap" rel="stylesheet" />
       </Head>

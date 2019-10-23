@@ -22,6 +22,7 @@ export default () => {
     <>
       <Head>
         <title>Michelle & Andrew | June 6th, 2020</title>
+        <link href="/static/favicon.ico" rel="icon" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta property="og:title" content="Michelle & Andrew | June 6th, 2020" />
         <meta property="og:description" content="Michelle and Andrew are getting married!" />
