@@ -1,7 +1,7 @@
-import Head from 'next/head';
+import Head from "next/head";
 import GlobalStyles from "../components/global-styles.jsx";
-import Navigation from '../components/navigation.jsx';
-import FloralFooter from '../components/floral-footer.jsx';
+import Navigation from "../components/navigation.jsx";
+import FloralFooter from "../components/floral-footer.jsx";
 
 export default () => {
   return (
@@ -10,14 +10,17 @@ export default () => {
         <title>Michelle & Andrew | Accommodations</title>
         <link href="/static/favicon.ico" rel="icon" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link href="https://fonts.googleapis.com/css?family=Lora|Tangerine&display=swap" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css?family=Lora|Tangerine&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <GlobalStyles />
       <Navigation />
       <style jsx>{`
         * {
           box-sizing: border-box;
-          font-family: 'Lora', serif;
+          font-family: "Lora", serif;
         }
 
         .headings {
@@ -55,6 +58,7 @@ export default () => {
         }
 
         .option {
+          line-height: 1.7em;
           flex: 0 1 500px;
           text-align: center;
           margin: 0 auto;
@@ -73,26 +77,23 @@ export default () => {
       </div>
       <p className="general-info">
         We have reserved room blocks at two hotels in Manchester. Both are
-        wonderful! The Equinox is the wedding venue, and the Hampton Inn is
-        just one mile away. Ask for the Cole-Bickford Wedding Room Block at
-        either hotel.
+        wonderful! The Equinox is the wedding venue, and the Hampton Inn is just
+        one mile away. Ask for the Cole-Bickford Wedding Room Block at either
+        hotel.
       </p>
       <div className="options">
         <div className="option">
           <h2>The Equinox Resort</h2>
           <p>
-            Please call <a href="tel:877-854-7625">877-854-7625</a> to make a
-            reservation.
-          </p>
-          <p>
-            The room block at the Equinox is available until Friday, May 8th.
+            Please call <a href="tel:877-854-7625">877-854-7625</a>{" "}
+            Monday through Friday from <br/>9:00 AM - 5:00 PM ET to make a reservation.
           </p>
         </div>
         <div className="option">
           <h2>Hampton Inn Manchester</h2>
           <p>
-            Please call <a href="tel:802-362-4000">802-362-4000</a>{" "}
-            or visit{" "}
+            Please call <a href="tel:802-362-4000">802-362-4000</a> and press 1
+            for the front desk (not 0 for standard reservations), <br/> or visit{" "}
             <a
               href="http://group.hamptoninn.com/ColeBickfordWedding"
               target="_blank"
@@ -101,10 +102,6 @@ export default () => {
               this special page for the wedding block
             </a>{" "}
             to make a reservation.
-          </p>
-          <p>
-            The room block at the Hampton Inn is available until Monday, May
-            4th.
           </p>
         </div>
       </div>
