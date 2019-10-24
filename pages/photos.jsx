@@ -92,7 +92,7 @@ export default () => {
         <Photo
           onClickPhoto={onClickPhoto}
           shouldShowPhotos={shouldShowPhotos}
-          src="/static/michelle-and-andrew-at-lake.jpg"
+          src="/static/michelle-and-andrew-hiking.jpg"
         />
         <Photo
           onClickPhoto={onClickPhoto}
@@ -102,7 +102,7 @@ export default () => {
         <Photo
           onClickPhoto={onClickPhoto}
           shouldShowPhotos={shouldShowPhotos}
-          src="/static/michelle-and-andrew-hiking.jpg"
+          src="/static/michelle-and-andrew-fancy.jpg"
         />
         <Photo
           onClickPhoto={onClickPhoto}
