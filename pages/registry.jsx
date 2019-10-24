@@ -34,6 +34,12 @@ export default () => {
           font-weight: 500;
         }
 
+        .description {
+          padding: 0 2em;
+          font-size: 1.1em;
+          line-height: 1.6em;
+        }
+
         .registries {
           max-width: 80%;
           margin: 0 auto;
@@ -73,6 +79,17 @@ export default () => {
         <h1>Registries</h1>
       </div>
       <div className="registries-wrapper">
+        <div className="description">
+          <p>
+            As we begin our lives together, we are especially grateful for the
+            love and support from our family and friends.
+          </p>
+          <p>
+            Should you wish to help us celebrate with a gift, we will have a card
+            box at our reception for monetary gifts and we have also created
+            registries at Crate&Barrel and Williams Sonoma.
+          </p>
+        </div>
         <div className="registries">
           <a
             className="registry-link"
