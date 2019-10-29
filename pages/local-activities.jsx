@@ -122,7 +122,7 @@ export default () => {
           </div>
         </div>
         <div className="activity">
-          <a target="_blank" rel="noopener" href="https://www.northshire.com/">Northshire Bookstore</a>
+          <a target="_blank" rel="noopener" href="https://www.northshire.com/manchester-store">Northshire Bookstore</a>
           <div className="description">
             Great independent bookstore, which has been a favorite of Michelle’s family for many years
           </div>
