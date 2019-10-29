@@ -38,7 +38,7 @@ export default () => {
           flex-direction: row;
           flex-wrap: wrap;
           width: 80%;
-          max-width: 970px;
+          max-width: 1020px;
           margin: 2em auto;
           justify-content: space-around;
         }
@@ -92,12 +92,6 @@ export default () => {
 
       <div className="activities">
         <div className="activity">
-          <a target="_blank" rel="noopener" href="https://www.northshire.com/">Northshire Bookstore</a>
-          <div className="description">
-            Great independent bookstore, which has been a favorite of Michelle’s family for many years
-          </div>
-        </div>
-        <div className="activity">
           <a target="_blank" rel="noopener" href="http://bikemanchestervt.com/">Cycling</a>
           <div className="description">
             Vermont has many wonderful roads for cycling; learn about some suggested routes nearby
@@ -110,9 +104,9 @@ export default () => {
           </div>
         </div>
         <div className="activity">
-          <a target="_blank" rel="noopener" href="http://www.greenmountainfalconryschool.com/">Green Mountain Falconry School</a>
+          <a target="_blank" rel="noopener" href="https://www.equinoxresort.com/activities/summer-activities/">Equinox Resort Activities</a>
           <div className="description">
-            Experience the sport of falconry, learn about hawk identification, and more
+            The Equinox offers ample activities for summer fun including: golf, tennis, falconry, off-road driving, and more; please contact the Equinox concierge for more information
           </div>
         </div>
         <div className="activity">
@@ -122,15 +116,15 @@ export default () => {
           </div>
         </div>
         <div className="activity">
-          <a target="_blank" rel="noopener" href="https://experience.landroverusa.com/vermont/index.html">Land Rover Off Road Driving</a>
-          <div className="description">
-            Roam the stunning Green Mountains and hone your skills on hill climbs, side tilts, and rocky terrain
-          </div>
-        </div>
-        <div className="activity">
           <a target="_blank" rel="noopener" href="http://manchesterdesigneroutlets.com/">Manchester Designer Outlets</a>
           <div className="description">
             Enjoy one of the top outlet shopping getaways in New England
+          </div>
+        </div>
+        <div className="activity">
+          <a target="_blank" rel="noopener" href="https://www.northshire.com/">Northshire Bookstore</a>
+          <div className="description">
+            Great independent bookstore, which has been a favorite of Michelle’s family for many years
           </div>
         </div>
       </div>

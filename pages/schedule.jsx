@@ -104,7 +104,7 @@ export default () => {
               All wedding guests are invited for sweets & drinks to kick off the weekend!
             </p>
             <p>
-              Free shuttle available from the Equinox. Shuttles will run from 6:45 PM until 9:00 PM*, private cars cannot access the location
+              Free shuttle available from the Equinox (5 min drive). Shuttles will run from 6:45 PM until 9:00 PM*. Private cars cannot access the location.
             </p>
             <p>
               Dressy Casual Attire
@@ -132,7 +132,7 @@ export default () => {
               Ceremony followed by cocktail hour and reception
             </p>
             <p>
-              Across the street from the Equinox main hotel, behind the 1811 House (3654 Main Street).
+              Across the street from the Equinox main hotel, behind the 1811 House - 3654 Main Street. (5 min walk)
             </p>
             <p>
               Cocktail Attire
@@ -160,7 +160,7 @@ export default () => {
               Please join us for a casual farewell bite.
             </p>
             <p>
-              Across the street from the Equinox main hotel, at 108 Union Street
+              Across the street from the Equinox main hotel, at 108 Union Street. (2 min walk)
             </p>
             <p>
               Casual Attire

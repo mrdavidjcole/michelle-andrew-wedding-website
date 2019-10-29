@@ -136,8 +136,8 @@ export default () => {
         <Link href="/local-activities">
           <a>Local Activities</a>
         </Link>
-        <Link href="/registry">
-          <a>Registry</a>
+        <Link href="/registries">
+          <a>Registries</a>
         </Link>
       </nav>
     </>

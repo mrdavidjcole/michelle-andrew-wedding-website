@@ -8,7 +8,7 @@ export default () => {
   return (
     <>
       <Head>
-        <title>Michelle & Andrew | Registry</title>
+        <title>Michelle & Andrew | Registries</title>
         <link href="/static/favicon.ico" rel="icon" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
