@@ -95,7 +95,7 @@ export default () => {
               Welcome Reception
             </h3>
             <p>
-              7:00 PM
+              7:00 PM*
             </p>
             <p>
               Equinox Pond House
@@ -104,7 +104,7 @@ export default () => {
               All wedding guests are invited for sweets & drinks to kick off the weekend!
             </p>
             <p>
-              Free shuttle available from the Equinox. Shuttles will run from 6:45 PM until 9:00 PM, private cars cannot access the location
+              Free shuttle available from the Equinox. Shuttles will run from 6:45 PM until 9:00 PM*, private cars cannot access the location
             </p>
             <p>
               Dressy Casual Attire
@@ -123,7 +123,7 @@ export default () => {
               Wedding Ceremony and Reception
             </h3>
             <p>
-              4:30 PM
+              4:30 PM*
             </p>
             <p>
               Equinox Meadow
@@ -151,7 +151,7 @@ export default () => {
               Farewell Breakfast
             </h3>
             <p>
-              9:00 AM
+              9:00 AM*
             </p>
             <p>
               Equinox Dormy Grill
