@@ -37,31 +37,52 @@ export default () => {
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
-          max-width: 80%;
+          width: 80%;
+          max-width: 970px;
           margin: 2em auto;
           justify-content: space-around;
         }
 
-        a {
-          align-items: center;
-          background-color: #ffffff;
-          border-radius: 4px;
-          box-shadow: 0 3px 10px rgba(61, 70, 66, 0.2);
-          color: rgb(43, 133, 81);
+        .activity {
           display: flex;
-          flex: 1 1 25%;
-          font-size: 1.3em;
-          height: 140px;
-          justify-content: center;
-          margin: 1em;
-          min-width: 250px;
-          text-decoration: none;
-          transition: box-shadow 300ms;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: space-between;
+          width: 100%;
+          padding: 1em 0;
         }
 
-        a:hover {
-          box-shadow: 0 3px 10px rgba(61, 70, 66, 0.4);
-          z-index: 1;
+        @media (max-width: 850px) {
+          .activity {
+            flex-wrap: wrap;
+          }
+
+          a {
+            padding-bottom: 1em;
+            flex: 0 0 100%;
+          }
+        }
+
+        @media (min-width: 851px) {
+          .activity {
+            flex-wrap: nowrap;
+          }
+
+          a {
+            text-align: right;
+            padding-right: 1em;
+            flex: 0 0 340px;
+          }
+        }
+
+        a {
+          color: rgb(43, 133, 81);
+          font-size: 1.3em;
+        }
+
+        .description {
+          flex: 1 1 auto;
+          line-height: 1.8em;
         }
       `}</style>
 
@@ -70,95 +91,48 @@ export default () => {
       </div>
 
       <div className="activities">
-        <a target="_blank" rel="noopener" href="https://www.svac.org/">
-          Art Museum
-        </a>
-        <a
-          target="_blank"
-          rel="noopener"
-          href="https://www.bromley.com/summer/attractions/mountain-adventure-park/"
-        >
-          Mount Bromley
-        </a>
-        <a target="_blank" rel="noopener" href="https://www.northshire.com/">
-          Bookstore
-        </a>
-        <a
-          target="_blank"
-          rel="noopener"
-          href="http://www.battenkill.com/trip/kill.htm"
-        >
-          Canoeing/Kayaking
-        </a>
-        <a target="_blank" rel="noopener" href="http://bikemanchestervt.com/">
-          Cycling
-        </a>
-        <a
-          target="_blank"
-          rel="noopener"
-          href="http://www.greenmountainfalconryschool.com/"
-        >
-          Falconry
-        </a>
-        <a
-          target="_blank"
-          rel="noopener"
-          href="https://m.orvis.com/product/manchester-vermont-fly-fishing-school/10ra"
-        >
-          Fly Fishing
-        </a>
-        <a
-          target="_blank"
-          rel="noopener"
-          href="http://www.equinoxresort.com/golf/"
-        >
-          Golf
-        </a>
-        <a
-          target="_blank"
-          rel="noopener"
-          href="http://www.equinoxresort.com/activities/preservation-trust-900-acres/"
-        >
-          Hiking
-        </a>
-        <a target="_blank" rel="noopener" href="https://hildene.org/">
-          Historic Site
-        </a>
-        <a
-          target="_blank"
-          rel="noopener"
-          href="https://experience.landroverusa.com/vermont/index.html"
-        >
-          Off Road Driving
-        </a>
-        <a
-          target="_blank"
-          rel="noopener"
-          href="http://manchesterdesigneroutlets.com/"
-        >
-          Outlet Shopping
-        </a>
-        <a
-          target="_blank"
-          rel="noopener"
-          href="https://vtstateparks.com/emerald.html"
-        >
-          Emerald State Park
-        </a>
-        <a
-          target="_blank"
-          rel="noopener"
-          href="https://vtstateparks.com/shaftsbury.html"
-        >
-          Shaftsbury State Park
-        </a>
-        <a
-          target="_blank"
-          rel="noopener"
-          href="https://www.fs.usda.gov/wps/portal/fsinternet/cs/recarea?ss=110920&navtype=BROWSEBYSUBJECT&cid=FSE_003738&navid=110240000000000&pnavid=110000000000000&recid=75341&actid=50&ttype=recarea&pname=Lye+Brook+Falls+Trail"
-        >
-          Waterfalls
-        </a>
+        <div className="activity">
+          <a target="_blank" rel="noopener" href="https://www.northshire.com/">Northshire Bookstore</a>
+          <div className="description">
+            Great independent bookstore, which has been a favorite of Michelle’s family for many years
+          </div>
+        </div>
+        <div className="activity">
+          <a target="_blank" rel="noopener" href="http://bikemanchestervt.com/">Cycling</a>
+          <div className="description">
+            Vermont has many wonderful roads for cycling; learn about some suggested routes nearby
+          </div>
+        </div>
+        <div className="activity">
+          <a target="_blank" rel="noopener" href="http://www.equinoxresort.com/activities/preservation-trust-900-acres/">Equinox Preservation Trust</a>
+          <div className="description">
+            Hiking trails for all levels from easy walks around the pond, through the woods, and more challenging trails up the mountain
+          </div>
+        </div>
+        <div className="activity">
+          <a target="_blank" rel="noopener" href="http://www.greenmountainfalconryschool.com/">Green Mountain Falconry School</a>
+          <div className="description">
+            Experience the sport of falconry, learn about hawk identification, and more
+          </div>
+        </div>
+        <div className="activity">
+          <a target="_blank" rel="noopener" href="https://hildene.org/">Hildene</a>
+          <div className="description">
+            Tour the historic home and beautiful gardens of Robert Todd Lincoln, son of President Abraham Lincoln
+          </div>
+        </div>
+        <div className="activity">
+          <a target="_blank" rel="noopener" href="https://experience.landroverusa.com/vermont/index.html">Land Rover Off Road Driving</a>
+          <div className="description">
+            Roam the stunning Green Mountains and hone your skills on hill climbs, side tilts, and rocky terrain
+          </div>
+        </div>
+        <div className="activity">
+          <a target="_blank" rel="noopener" href="http://manchesterdesigneroutlets.com/">Manchester Designer Outlets</a>
+          <div className="description">
+            Enjoy one of the top outlet shopping getaways in New England
+          </div>
+        </div>
       </div>
       <FloralFooter />
     </>
