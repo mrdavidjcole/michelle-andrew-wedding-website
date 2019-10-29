@@ -58,7 +58,7 @@ export default () => {
           }
 
           a {
-            padding-bottom: 1em;
+            padding-bottom: .25em;
             flex: 0 0 100%;
           }
         }
@@ -69,7 +69,7 @@ export default () => {
           }
 
           a {
-            text-align: right;
+            text-align: left;
             padding-right: 1em;
             flex: 0 0 340px;
           }
