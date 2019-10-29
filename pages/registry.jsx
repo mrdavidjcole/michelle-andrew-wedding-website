@@ -94,6 +94,7 @@ export default () => {
           <a
             className="registry-link"
             href="https://www.crateandbarrel.com/gift-registry/michelle-cole-and-andrew-bickford/r6016453"
+            target="_blank"
           >
             <div className="logo cb">
               <CrateAndBarrelSvg />
@@ -102,6 +103,7 @@ export default () => {
           <a
             className="registry-link"
             href="https://www.williams-sonoma.com/m/registry/whz7qx2vdw/registry-list.html"
+            target="_blank"
           >
             <div className="logo ws">
               <WilliamsSonomaSvg />
