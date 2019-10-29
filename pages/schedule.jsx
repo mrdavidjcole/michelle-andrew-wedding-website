@@ -76,6 +76,11 @@ export default () => {
           font-weight: 600;
         }
 
+        .variations {
+          margin-bottom: 4em;
+          text-align: center;
+        }
+
       `}</style>
       <div className="headings">
         <h1>Schedule of Events</h1>
@@ -165,6 +170,9 @@ export default () => {
             </p>
           </div>
         </div>
+        <p className="variations">
+          *All times are subject to slight variations; final times will be confirmed in 2020
+        </p>
       </div>
       <FloralFooter />
     </>
