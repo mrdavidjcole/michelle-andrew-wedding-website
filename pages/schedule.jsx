@@ -28,11 +28,19 @@ export default () => {
           font-family: Tangerine, cursive;
           font-size: 3em;
           font-weight: 500;
+          margin-bottom: .2em;
         }
 
         h2 {
           font-weight: 300;
           font-size: 1.8em;
+        }
+
+        .cursive {
+          font-family: Tangerine, cursive;
+          font-size: 2.5em;
+          margin-top: .2em;
+          font-weight: 500;
         }
 
         h3 {
@@ -84,6 +92,7 @@ export default () => {
       `}</style>
       <div className="headings">
         <h1>Schedule of Events</h1>
+        <h2 className="cursive">June 5th - 7th, 2020</h2>
       </div>
       <div className="days">
         <div className="day">
@@ -104,7 +113,7 @@ export default () => {
               All wedding guests are invited for sweets & drinks to kick off the weekend!
             </p>
             <p>
-              Free shuttle available from the Equinox (5 min drive). Shuttles will run from 6:45 PM until 9:00 PM*. Private cars cannot access the location.
+              Free shuttle from the Equinox (5 min drive). Shuttles will run from 6:45 PM until 9:00 PM*. Private cars cannot access the location.
             </p>
             <p>
               Dressy Casual Attire

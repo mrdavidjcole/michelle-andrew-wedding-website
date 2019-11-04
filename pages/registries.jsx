@@ -86,7 +86,7 @@ export default () => {
           </p>
           <p>
             Should you wish to help us celebrate with a gift, we will have a card
-            box at our reception for monetary gifts and we have also created
+            box at our reception and we have also created
             registries at Crate&Barrel and Williams Sonoma.
           </p>
         </div>

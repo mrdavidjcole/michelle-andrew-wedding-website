@@ -37,7 +37,7 @@ export default () => {
           text-align: center;
         }
 
-        h2 {
+        h1 {
           font-family: Tangerine, cursive;
           font-size: 3em;
           font-weight: 500;
@@ -82,15 +82,23 @@ export default () => {
 
         a {
           text-decoration: none;
-          color: rgb(103, 156, 125);
+          color: rgb(43, 133, 81);
           transition: color 300ms;
+        }
+
+        .equinox-text-link {
+          margin-bottom: 2em;
+          font-size: 1.5em;
         }
 
       `}</style>
       <div className="headings">
-        <h2>The Equinox Resort</h2>
+        <h1>Venue</h1>
       </div>
       <div className="venue-photo-and-details">
+        <a className="equinox-text-link" href="https://www.equinoxresort.com/" target="_blank" rel="noreferrer noopener">
+          The Equinox Resort
+        </a>
         <a href="https://www.equinoxresort.com/" target="_blank">
           <img
             className="equinox-photo"
