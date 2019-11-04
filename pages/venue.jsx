@@ -52,6 +52,7 @@ export default () => {
 
         .venue-photo-and-details {
           display: flex;
+          flex-direction: column;
           flex-wrap: wrap;
           align-items: center;
           justify-content: space-around;
