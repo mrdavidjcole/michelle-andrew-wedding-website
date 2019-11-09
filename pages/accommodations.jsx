@@ -52,19 +52,21 @@ export default () => {
           flex-wrap: wrap;
           align-items: flex-start;
           justify-content: space-between;
-          max-width: 1200px;
+          max-width: 1600px;
           margin: 0 auto;
           padding: 0 2em;
         }
 
         .option {
           line-height: 1.7em;
-          flex: 0 1 500px;
-          text-align: center;
+          flex: 0 1 400px;
           margin: 0 auto;
-          padding: 3em;
-          min-height: 300px;
-          border-bottom: 2px solid rgb(197, 214, 204);
+          padding: 0 1em 3em;
+        }
+
+        .option-details {
+          border-top: 2px solid rgb(197, 214, 204);
+          padding-top: 1em;
         }
 
         a {
@@ -76,24 +78,24 @@ export default () => {
         <h1>Accommodations</h1>
       </div>
       <p className="general-info">
-        We have reserved room blocks at two hotels in Manchester. Both are
-        wonderful! The Equinox is the wedding venue, and the Hampton Inn is just
-        one mile away. Ask for the Cole-Bickford Wedding Room Block at either
-        hotel.
+        We have reserved room blocks at three hotels in Manchester. All are
+        wonderful! The Equinox is the wedding venue, the Taconic is next door to
+        the venue, and the Hampton Inn is just one mile away. Ask for the
+        Cole-Bickford Wedding Room Block at any of the hotels.
       </p>
       <div className="options">
         <div className="option">
           <h2>The Equinox Resort</h2>
-          <p>
+          <p className="option-details">
             Please call <a href="tel:877-854-7625">877-854-7625</a>{" "}
-            Monday through Friday from <br/>9:00 AM - 5:00 PM ET to make a reservation.
+            Monday through Friday from 9:00 AM - 5:00 PM ET to make a reservation.
           </p>
         </div>
         <div className="option">
           <h2>Hampton Inn Manchester</h2>
-          <p>
+          <p className="option-details">
             Please call <a href="tel:802-362-4000">802-362-4000</a> and press 1
-            for the front desk (not 0 for standard reservations), <br/> or visit{" "}
+            for the front desk (not 0 for standard reservations), or visit{" "}
             <a
               href="http://group.hamptoninn.com/ColeBickfordWedding"
               target="_blank"
@@ -102,6 +104,12 @@ export default () => {
               this special page for the wedding block
             </a>{" "}
             to make a reservation.
+          </p>
+        </div>
+        <div className="option">
+          <h2>Kimpton Taconic Hotel</h2>
+          <p className="option-details">
+            Please call <a href="tel:877-699-3331">877-699-3331</a> or visit <a href="https://bit.ly/ColeBickford" target="_blank" rel="noopener noreferrer">this special page for the wedding block</a> to make a reservation.
           </p>
         </div>
       </div>
