@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Head from "next/head";
 import { useState } from 'react';
 
 export default () => {
@@ -101,6 +102,12 @@ export default () => {
           }
         }
       `}</style>
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/css?family=Lora|Tangerine&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
       <Link href="/">
         <a>
           <img className="floral-header" src="/static/floral-header.png"/>
