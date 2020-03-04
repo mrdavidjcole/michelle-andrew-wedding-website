@@ -132,7 +132,7 @@ export default () => {
               Wedding Ceremony and Reception
             </h3>
             <p>
-              4:30 PM*
+              4:00 PM*
             </p>
             <p>
               Equinox Meadow
@@ -180,7 +180,7 @@ export default () => {
           </div>
         </div>
         <p className="variations">
-          *All times are subject to slight variations; final times will be confirmed in 2020
+          *All times are subject to slight variations; final times will be confirmed in April 2020
         </p>
       </div>
       <FloralFooter />
