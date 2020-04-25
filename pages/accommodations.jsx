@@ -87,29 +87,23 @@ export default () => {
         <div className="option">
           <h2>The Equinox Resort</h2>
           <p className="option-details">
-            Please call <a href="tel:877-854-7625">877-854-7625</a>{" "}
-            Monday through Friday from 9:00 AM - 5:00 PM ET to make a reservation.
+            Room Block will be available starting approximately May 15, 2020,
+            updated information on how to book will be provided here as soon as
+            available.
           </p>
         </div>
         <div className="option">
           <h2>Hampton Inn Manchester</h2>
           <p className="option-details">
-            Please call <a href="tel:802-362-4000">802-362-4000</a> and press 1
-            for the front desk (not 0 for standard reservations), or visit{" "}
-            <a
-              href="http://group.hamptoninn.com/ColeBickfordWedding"
-              target="_blank"
-              rel="noreferrer"
-            >
-              this special page for the wedding block
-            </a>{" "}
-            to make a reservation.
+            We still plan to provide a room block here; however, we have been
+            informed that it likely will not be available until the fall.
           </p>
         </div>
         <div className="option">
           <h2>Kimpton Taconic Hotel</h2>
           <p className="option-details">
-            Please call <a href="tel:877-699-3331">877-699-3331</a> or visit <a href="https://bit.ly/ColeBickford" target="_blank" rel="noopener noreferrer">this special page for the wedding block</a> to make a reservation.
+            We still plan to provide a room block here; however, we have been
+            informed that it likely will not be available until the fall.
           </p>
         </div>
       </div>
