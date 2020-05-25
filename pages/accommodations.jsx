@@ -87,7 +87,7 @@ export default () => {
         <div className="option">
           <h2>The Equinox Resort</h2>
           <p className="option-details">
-            Room Block will be available starting approximately May 15, 2020,
+            Room Block will be available starting approximately June 15, 2020,
             updated information on how to book will be provided here as soon as
             available.
           </p>
@@ -95,8 +95,9 @@ export default () => {
         <div className="option">
           <h2>Hampton Inn Manchester</h2>
           <p className="option-details">
-            We still plan to provide a room block here; however, we have been
-            informed that it likely will not be available until the fall.
+            Room Block will be available starting approximately June 15, 2020,
+            updated information on how to book will be provided here as soon as
+            available.
           </p>
         </div>
         <div className="option">
