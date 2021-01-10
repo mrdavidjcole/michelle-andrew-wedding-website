@@ -52,15 +52,14 @@ export default () => {
           flex-wrap: wrap;
           align-items: flex-start;
           justify-content: space-between;
-          max-width: 1600px;
+          max-width: 1000px;
           margin: 0 auto;
           padding: 0 2em;
         }
 
         .option {
           line-height: 1.7em;
-          flex: 0 1 400px;
-          margin: 0 auto;
+          flex: 1 1 400px;
           padding: 0 1em 3em;
         }
 
@@ -78,10 +77,10 @@ export default () => {
         <h1>Accommodations</h1>
       </div>
       <p className="general-info">
-        We have reserved room blocks at three hotels in Manchester. All are
-        wonderful! The Equinox is the wedding venue, the Taconic is next door to
-        the venue, and the Hampton Inn is just one mile away. Ask for the
-        Cole-Bickford Wedding Room Block at any of the hotels.
+        We have reserved room blocks at two hotels in Manchester. Both are
+        wonderful! The Equinox is the wedding venue, and the Hampton Inn is just
+        one mile away. Ask for the Cole-Bickford Wedding Room Block at either of
+        the hotels.
       </p>
       <div className="options">
         <div className="option">
@@ -110,13 +109,6 @@ export default () => {
               this special page for the wedding block
             </a>{" "}
             to make a reservation.
-          </p>
-        </div>
-        <div className="option">
-          <h2>Kimpton Taconic Hotel</h2>
-          <p className="option-details">
-            We still plan to provide a room block here; however, we have been
-            informed that it likely will not be available until the fall.
           </p>
         </div>
       </div>
