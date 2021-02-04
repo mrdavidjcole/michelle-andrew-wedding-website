@@ -89,7 +89,7 @@ export default () => {
             Please call <a href="tel:877-854-7625">877-854-7625</a> Monday
             through Friday from 9:00 AM - 5:00 PM ET or visit{" "}
             <a
-              href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1589516785311&key=GRP&app=resvlink"
+              href="https://be.synxis.com/?adult=1&arrive=2021-06-04&chain=21123&child=0&rate=2106COLEBI&clearcache=all&configcode=initialConfig&currency=USD&depart=2021-06-06&hotel=24349&level=hotel&locale=en-US&nocache=true&notrack=true&rooms=1&sbe_ri=0&themecode=initialTheme2"
               target="_blank"
             >
               this special page for the wedding block
