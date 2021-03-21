@@ -1,6 +1,6 @@
-import Link from 'next/link';
+import Link from "next/link";
 import Head from "next/head";
-import { useState } from 'react';
+import { useState } from "react";
 
 export default () => {
   const [navMenuIsOpen, setNavMenuIsOpen] = useState(false);
@@ -34,7 +34,7 @@ export default () => {
 
         a {
           color: #303030;
-          font-family: 'Lora', serif;
+          font-family: "Lora", serif;
           text-decoration: none;
           flex: 0 0 auto;
           transition: border-color 200ms;
@@ -69,32 +69,36 @@ export default () => {
         }
 
         .nav-toggler-icon-top-line {
-          transform: translateX(-50%) translateY(${navMenuIsOpen ? "0px" : "-10px"}) rotate(${navMenuIsOpen ? "-45deg" : "0deg"});
+          transform: translateX(-50%)
+            translateY(${navMenuIsOpen ? "0px" : "-10px"})
+            rotate(${navMenuIsOpen ? "-45deg" : "0deg"});
         }
 
         .nav-toggler-icon-middle-line {
           opacity: ${navMenuIsOpen ? 0 : 1};
-          transform: translateX(-50%) translateY(0px) rotate(${navMenuIsOpen ? "-45deg" : "0deg"});
+          transform: translateX(-50%) translateY(0px)
+            rotate(${navMenuIsOpen ? "-45deg" : "0deg"});
         }
 
         .nav-toggler-icon-bottom-line {
-          transform: translateX(-50%) translateY(${navMenuIsOpen ? "0px" : "10px"}) rotate(${navMenuIsOpen ? "45deg" : "0deg"});
+          transform: translateX(-50%)
+            translateY(${navMenuIsOpen ? "0px" : "10px"})
+            rotate(${navMenuIsOpen ? "45deg" : "0deg"});
         }
-
 
         @media (max-width: 850px) {
           nav {
             flex-direction: column;
             margin: 0;
-            padding: ${navMenuIsOpen ? '.5em 0' : '0'};
-            max-height: ${navMenuIsOpen ? '320px' : '0px'};
+            padding: ${navMenuIsOpen ? ".5em 0" : "0"};
+            max-height: ${navMenuIsOpen ? "360px" : "0px"};
             overflow: hidden;
             transition: max-height 400ms, opacity 400ms;
             opacity: ${navMenuIsOpen ? 1 : 0};
           }
 
           a {
-            margin: .5em 0;
+            margin: 0.5em 0;
           }
 
           .nav-toggler-button {
@@ -110,7 +114,7 @@ export default () => {
       </Head>
       <Link href="/">
         <a>
-          <img className="floral-header" src="/static/floral-header.png"/>
+          <img className="floral-header" src="/static/floral-header.png" />
         </a>
       </Link>
       <button
@@ -124,6 +128,9 @@ export default () => {
       <nav>
         <Link href="/">
           <a>Our Wedding</a>
+        </Link>
+        <Link href="/rsvp">
+          <a>RSVP</a>
         </Link>
         <Link href="/our-story">
           <a>Our Story</a>
