@@ -22,19 +22,31 @@ export default () => {
           margin: 0 auto;
           max-width: 90%;
         }
+
+        .scroll_tip {
+          width: 640;
+          max-width: 90%;
+          margin: 20px auto 0;
+          font-family: "Lora", serif;
+          text-align: center;
+        }
       `}</style>
       <Navigation />
 
       <iframe
         src="https://docs.google.com/forms/d/e/1FAIpQLSej6LvyxB3AB-9sVmdaR5pXMVhQF4fBqdkhW4UrOknvEofSig/viewform?embedded=true"
         width="640"
-        height="1934"
+        height="500"
         frameBorder="0"
         marginHeight="0"
         marginWidth="0"
       >
         Loading…
       </iframe>
+      <p className="scroll_tip">
+        Please scroll down to
+        <br /> complete the form and submit
+      </p>
       <FloralFooter />
     </>
   );
