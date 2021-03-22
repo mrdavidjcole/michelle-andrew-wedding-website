@@ -85,15 +85,15 @@ export default () => {
         <h2>June 5th, 2021</h2>
       </div>
       <p>
-        In light of the COVID-19 pandemic, we have made the difficult decision
-        to postpone our wedding celebration to June 2021. We will continue to
-        put more information about the new plan on this website as it becomes
-        available, so please continue to check back in for more updates.
+        We look forward to celebrating the 1st anniversary of our wedding with
+        you! We will continue to put more information about the new plan on this
+        website as it becomes available, so please continue to check back in for
+        more updates.
       </p>
       <img
         className="main-photo"
         onLoad={onLoadImg}
-        ref={elem => (mainImage = elem)}
+        ref={(elem) => (mainImage = elem)}
         src="/static/michelle-and-andrew-main.jpg"
       />
       <FloralFooter />

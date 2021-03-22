@@ -106,7 +106,7 @@ export default () => {
             <p>7:00 PM*</p>
             <p>Equinox Pond House</p>
             <p className="summary">
-              All wedding guests are invited for sweets & drinks to kick off the
+              All guests are invited for sweets & drinks to kick off the
               weekend!
             </p>
             <p>
@@ -125,7 +125,7 @@ export default () => {
             <div className="date">
               <h2>Saturday, June 5th</h2>
             </div>
-            <h3>Wedding Ceremony and Reception</h3>
+            <h3>Vow Renewal Ceremony and Reception</h3>
             <p>4:00 PM*</p>
             <p>Equinox Meadow</p>
             <p className="summary">
