@@ -85,7 +85,7 @@ export default () => {
         <h2>June 5th, 2021</h2>
       </div>
       <p>
-        We look forward to celebrating the 1st anniversary of our wedding with
+        We look forward to celebrating the first anniversary of our wedding with
         you! We will continue to put more information about the new plan on this
         website as it becomes available, so please continue to check back in for
         more updates.
